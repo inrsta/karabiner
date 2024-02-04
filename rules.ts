@@ -49,6 +49,9 @@ const rules: KarabinerRules[] = [
       v: app("Visual Studio Code"),
       f: app("Finder"),
       m: app("Firefox"),
+      t: app("iTerm"),
+      s: app("Slack"),
+      
       // "i"Message
       l: open(
         "raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
