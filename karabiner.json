@@ -194,6 +194,54 @@
               {
                 "to": [
                   {
+                    "shell_command": "open -a 'iTerm.app'"
+                  }
+                ],
+                "description": "Open -a 'iTerm.app'",
+                "type": "basic",
+                "from": {
+                  "key_code": "t",
+                  "modifiers": {
+                    "mandatory": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_o",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open -a 'Slack.app'"
+                  }
+                ],
+                "description": "Open -a 'Slack.app'",
+                "type": "basic",
+                "from": {
+                  "key_code": "s",
+                  "modifiers": {
+                    "mandatory": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_o",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
                     "shell_command": "open raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
                   }
                 ],
