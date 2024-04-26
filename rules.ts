@@ -51,6 +51,7 @@ const rules: KarabinerRules[] = [
       m: app("Firefox"),
       t: app("iTerm"),
       s: app("Slack"),
+      b: app("Obsidian"),
       
       // "i"Message
       l: open(
