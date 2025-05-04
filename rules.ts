@@ -33,8 +33,9 @@ const rules: KarabinerRules[] = [
         ],
         to_if_alone: [
           {
-            key_code: "escape",
-          },
+            "hold_down_milliseconds": 100,  // or higher
+            "key_code": "caps_lock"
+          }
         ],
         type: "basic",
       },
@@ -72,22 +73,17 @@ const rules: KarabinerRules[] = [
     // o = "Open" applications
     o: {
       1: app("1Password"),
+      b: app("Obsidian"),
       g: app("Google Chrome"),
-      c: app("Notion Calendar"),
-      v: app("Zed"),
-      d: app("Discord"),
+      c: app("Discord"),
+      v: app("Visual Studio Code"),
+      d: app("Docker Desktop"),
       s: app("Slack"),
-      e: app("Superhuman"),
+      e: app("Microsoft Teams"),
       n: app("Notion"),
-      t: app("Terminal"),
-      // Open todo list managed via *H*ypersonic
-      h: open(
-        "notion://www.notion.so/stellatehq/7b33b924746647499d906c55f89d5026"
-      ),
-      z: app("zoom.us"),
-      // "M"arkdown (Reflect.app)
-      m: app("Reflect"),
-      r: app("Reflect"),
+      t: app("iTerm"),
+      m: app("Firefox"),
+      r: app("VMWare Horizon Client"),
       f: app("Finder"),
       // "i"Message
       i: app("Texts"),
